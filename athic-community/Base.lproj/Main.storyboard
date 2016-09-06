@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzB-ck-xvI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzB-ck-xvI" customClass="CustomView" customModule="athic_community" customModuleProvider="target">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="athic" translatesAutoresizingMaskIntoConstraints="NO" id="aas-Qd-mIp">
                                         <constraints>
@@ -60,7 +60,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpr-zv-dAn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpr-zv-dAn" customClass="CustomButton" customModule="athic_community" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.25490196078431371" green="0.36078431372549019" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Vx7-Sw-qVw"/>
@@ -70,17 +70,17 @@
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aaf-Cd-3tI">
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCk-mB-VTG">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hCk-mB-VTG" customClass="CustomTextField" customModule="athic_community" customModuleProvider="target">
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-he-oxX">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-he-oxX" customClass="CustomTextField" customModule="athic_community" customModuleProvider="target">
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-r7-ttZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NB1-r7-ttZ" customClass="CustomSignInButton" customModule="athic_community" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.91764705882352937" green="0.4823529411764706" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                         <state key="normal" title="Sign In">
@@ -89,21 +89,32 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duY-oi-WrA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OPy-As-ofR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DP6-nB-Ye4" firstAttribute="top" secondItem="gzB-ck-xvI" secondAttribute="bottom" constant="20" id="00p-7V-s4T"/>
                             <constraint firstItem="gzB-ck-xvI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5Da-1v-s4S"/>
-                            <constraint firstItem="Wpr-zv-dAn" firstAttribute="top" secondItem="DP6-nB-Ye4" secondAttribute="bottom" constant="40" id="76P-lW-BkK"/>
+                            <constraint firstItem="duY-oi-WrA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5my-t9-aOx"/>
+                            <constraint firstItem="Wpr-zv-dAn" firstAttribute="top" secondItem="DP6-nB-Ye4" secondAttribute="bottom" constant="20" id="76P-lW-BkK"/>
+                            <constraint firstItem="aaf-Cd-3tI" firstAttribute="top" secondItem="duY-oi-WrA" secondAttribute="bottom" constant="15" id="843-hX-8L4"/>
                             <constraint firstItem="DP6-nB-Ye4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8xo-es-Cu1"/>
+                            <constraint firstItem="duY-oi-WrA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="A8R-lo-Dhn"/>
                             <constraint firstItem="DP6-nB-Ye4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PZn-74-fd5"/>
+                            <constraint firstItem="duY-oi-WrA" firstAttribute="top" secondItem="Wpr-zv-dAn" secondAttribute="bottom" constant="15" id="Wip-Qv-Wkd"/>
                             <constraint firstAttribute="trailing" secondItem="gzB-ck-xvI" secondAttribute="trailing" id="YKQ-Um-ZXC"/>
                             <constraint firstItem="aaf-Cd-3tI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="cNX-cM-bo7"/>
                             <constraint firstAttribute="trailing" secondItem="KDG-ob-1WE" secondAttribute="trailing" id="chA-9i-WOO"/>
                             <constraint firstItem="Wpr-zv-dAn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e8k-re-Q62"/>
                             <constraint firstItem="KDG-ob-1WE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eRx-xf-dvf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aaf-Cd-3tI" secondAttribute="trailing" constant="30" id="iwS-WW-tfg"/>
-                            <constraint firstItem="aaf-Cd-3tI" firstAttribute="top" secondItem="Wpr-zv-dAn" secondAttribute="bottom" constant="40" id="jK8-eX-0e2"/>
                             <constraint firstItem="aaf-Cd-3tI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ktj-cZ-Pli"/>
                             <constraint firstItem="gzB-ck-xvI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qa7-tT-KS7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KDG-ob-1WE" secondAttribute="bottom" id="xc6-c3-SJu"/>

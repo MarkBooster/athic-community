@@ -14,6 +14,11 @@
 		855AFE001D7EB77800BB5AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855AFDFF1D7EB77800BB5AB2 /* Assets.xcassets */; };
 		855AFE031D7EB77800BB5AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855AFE011D7EB77800BB5AB2 /* LaunchScreen.storyboard */; };
 		855AFE0B1D7EB83600BB5AB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 855AFE0A1D7EB83600BB5AB2 /* GoogleService-Info.plist */; };
+		855AFE101D7EC75B00BB5AB2 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AFE0F1D7EC75B00BB5AB2 /* CustomView.swift */; };
+		855AFE131D7EC7E600BB5AB2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AFE121D7EC7E600BB5AB2 /* Constants.swift */; };
+		855AFE151D7EC9A200BB5AB2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AFE141D7EC9A200BB5AB2 /* CustomButton.swift */; };
+		855AFE171D7ECB1300BB5AB2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AFE161D7ECB1300BB5AB2 /* CustomTextField.swift */; };
+		855AFE191D7ECC4600BB5AB2 /* CustomSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AFE181D7ECC4600BB5AB2 /* CustomSignInButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		855AFE021D7EB77800BB5AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		855AFE041D7EB77800BB5AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		855AFE0A1D7EB83600BB5AB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		855AFE0F1D7EC75B00BB5AB2 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		855AFE121D7EC7E600BB5AB2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		855AFE141D7EC9A200BB5AB2 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		855AFE161D7ECB1300BB5AB2 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		855AFE181D7ECC4600BB5AB2 /* CustomSignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignInButton.swift; sourceTree = "<group>"; };
 		FB211A8F522D8CAC0BA6C326 /* Pods-athic-community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-athic-community.release.xcconfig"; path = "Pods/Target Support Files/Pods-athic-community/Pods-athic-community.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +81,7 @@
 		855AFDF71D7EB77800BB5AB2 /* athic-community */ = {
 			isa = PBXGroup;
 			children = (
+				855AFE111D7EC7D700BB5AB2 /* Utilities */,
 				855AFE0E1D7EB85500BB5AB2 /* Model */,
 				855AFE0D1D7EB85000BB5AB2 /* View */,
 				855AFE0C1D7EB84700BB5AB2 /* Controller */,
@@ -95,6 +106,10 @@
 		855AFE0D1D7EB85000BB5AB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				855AFE0F1D7EC75B00BB5AB2 /* CustomView.swift */,
+				855AFE141D7EC9A200BB5AB2 /* CustomButton.swift */,
+				855AFE161D7ECB1300BB5AB2 /* CustomTextField.swift */,
+				855AFE181D7ECC4600BB5AB2 /* CustomSignInButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -104,6 +119,14 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		855AFE111D7EC7D700BB5AB2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				855AFE121D7EC7E600BB5AB2 /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		EF3FE8DDFD9BA581463127D0 /* Pods */ = {
@@ -239,8 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855AFE191D7ECC4600BB5AB2 /* CustomSignInButton.swift in Sources */,
+				855AFE101D7EC75B00BB5AB2 /* CustomView.swift in Sources */,
 				855AFDFB1D7EB77800BB5AB2 /* SignInVC.swift in Sources */,
+				855AFE171D7ECB1300BB5AB2 /* CustomTextField.swift in Sources */,
 				855AFDF91D7EB77800BB5AB2 /* AppDelegate.swift in Sources */,
+				855AFE131D7EC7E600BB5AB2 /* Constants.swift in Sources */,
+				855AFE151D7EC9A200BB5AB2 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
