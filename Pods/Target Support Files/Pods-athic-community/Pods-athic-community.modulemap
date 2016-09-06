@@ -1,0 +1,6 @@
+framework module Pods_athic_community {
+  umbrella header "Pods-athic-community-umbrella.h"
+
+  export *
+  module * { export * }
+}

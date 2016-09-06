@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>63204126396-1brdq7ha1v0kinoqoc9ssbodfo3iuedn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.63204126396-1brdq7ha1v0kinoqoc9ssbodfo3iuedn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDdXf76zd7-2yfaiDcmxI6p6ybn8aFFU2g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>63204126396</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Athic.athic-community</string>
+	<key>PROJECT_ID</key>
+	<string>athic-community</string>
+	<key>STORAGE_BUCKET</key>
+	<string>athic-community.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:63204126396:ios:6bf595cb9d626349</string>
+	<key>DATABASE_URL</key>
+	<string>https://athic-community.firebaseio.com</string>
+</dict>
+</plist>
