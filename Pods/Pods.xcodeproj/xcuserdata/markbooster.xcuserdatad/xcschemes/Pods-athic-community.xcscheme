@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BF95177C62F4DA0E264FBED0904E3072"
+               BlueprintIdentifier = "7BB61C1C8DD598D803F7F1C7ADDFA8FA"
                BuildableName = "Pods_athic_community.framework"
                BlueprintName = "Pods-athic-community"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BF95177C62F4DA0E264FBED0904E3072"
+            BlueprintIdentifier = "7BB61C1C8DD598D803F7F1C7ADDFA8FA"
             BuildableName = "Pods_athic_community.framework"
             BlueprintName = "Pods-athic-community"
             ReferencedContainer = "container:Pods.xcodeproj">

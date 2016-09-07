@@ -129,11 +129,47 @@
                     <connections>
                         <outlet property="emailField" destination="hCk-mB-VTG" id="xM2-94-f8G"/>
                         <outlet property="passwordField" destination="BD7-he-oxX" id="e1R-Jm-hK0"/>
+                        <segue destination="aDL-JS-fWc" kind="show" identifier="goToFeed" id="l0D-Vz-dnK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="uHf-Vb-9Wm">
+            <objects>
+                <viewController id="aDL-JS-fWc" customClass="FeedVC" customModule="athic_community" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5dG-QW-Glu"/>
+                        <viewControllerLayoutGuide type="bottom" id="yxy-ks-ZbD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Im-MM-UnX" customClass="Feedv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jc-ur-buj">
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOutPressed:" destination="aDL-JS-fWc" eventType="touchUpInside" id="nSz-dF-QYA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4jc-ur-buj" firstAttribute="centerX" secondItem="7Im-MM-UnX" secondAttribute="centerX" id="siq-tr-UYA"/>
+                            <constraint firstItem="4jc-ur-buj" firstAttribute="centerY" secondItem="7Im-MM-UnX" secondAttribute="centerY" id="yM3-Gx-eOR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="GJd-Xd-Yzw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3R-IY-Hen" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="-125"/>
         </scene>
     </scenes>
     <resources>
