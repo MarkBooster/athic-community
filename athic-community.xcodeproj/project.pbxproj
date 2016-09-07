@@ -24,6 +24,7 @@
 /* Begin PBXFileReference section */
 		5B94DBFF04B5F2748F6EC4DB /* Pods-athic-community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-athic-community.debug.xcconfig"; path = "Pods/Target Support Files/Pods-athic-community/Pods-athic-community.debug.xcconfig"; sourceTree = "<group>"; };
 		84C298D1750EE708322E0CB5 /* Pods_athic_community.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_athic_community.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		850F33D51D8086AD005B667B /* athic-community.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "athic-community.entitlements"; sourceTree = "<group>"; };
 		855AFDF51D7EB77800BB5AB2 /* athic-community.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "athic-community.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855AFDF81D7EB77800BB5AB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		855AFDFA1D7EB77800BB5AB2 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		855AFDF71D7EB77800BB5AB2 /* athic-community */ = {
 			isa = PBXGroup;
 			children = (
+				850F33D51D8086AD005B667B /* athic-community.entitlements */,
 				855AFE111D7EC7D700BB5AB2 /* Utilities */,
 				855AFE0E1D7EB85500BB5AB2 /* Model */,
 				855AFE0D1D7EB85000BB5AB2 /* View */,
@@ -173,7 +175,13 @@
 				TargetAttributes = {
 					855AFDF41D7EB77800BB5AB2 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = M4FJ98DE97;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -394,6 +402,8 @@
 			baseConfigurationReference = 5B94DBFF04B5F2748F6EC4DB /* Pods-athic-community.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "athic-community/athic-community.entitlements";
+				DEVELOPMENT_TEAM = M4FJ98DE97;
 				INFOPLIST_FILE = "athic-community/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Athic.athic-community";
@@ -407,6 +417,8 @@
 			baseConfigurationReference = FB211A8F522D8CAC0BA6C326 /* Pods-athic-community.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "athic-community/athic-community.entitlements";
+				DEVELOPMENT_TEAM = M4FJ98DE97;
 				INFOPLIST_FILE = "athic-community/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Athic.athic-community";
