@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16F1EAA70370158DEE8E8C41 /* Pods_athic_community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C298D1750EE708322E0CB5 /* Pods_athic_community.framework */; };
+		8535A1CE1D894D53008373F3 /* CustomCirkelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8535A1CD1D894D53008373F3 /* CustomCirkelView.swift */; };
 		855AFDF91D7EB77800BB5AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AFDF81D7EB77800BB5AB2 /* AppDelegate.swift */; };
 		855AFDFB1D7EB77800BB5AB2 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AFDFA1D7EB77800BB5AB2 /* SignInVC.swift */; };
 		855AFDFE1D7EB77800BB5AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855AFDFC1D7EB77800BB5AB2 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		5B94DBFF04B5F2748F6EC4DB /* Pods-athic-community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-athic-community.debug.xcconfig"; path = "Pods/Target Support Files/Pods-athic-community/Pods-athic-community.debug.xcconfig"; sourceTree = "<group>"; };
 		84C298D1750EE708322E0CB5 /* Pods_athic_community.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_athic_community.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		850F33D51D8086AD005B667B /* athic-community.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "athic-community.entitlements"; sourceTree = "<group>"; };
+		8535A1CD1D894D53008373F3 /* CustomCirkelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCirkelView.swift; sourceTree = "<group>"; };
 		855AFDF51D7EB77800BB5AB2 /* athic-community.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "athic-community.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855AFDF81D7EB77800BB5AB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		855AFDFA1D7EB77800BB5AB2 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				855AFE141D7EC9A200BB5AB2 /* CustomButton.swift */,
 				855AFE161D7ECB1300BB5AB2 /* CustomTextField.swift */,
 				855AFE181D7ECC4600BB5AB2 /* CustomSignInButton.swift */,
+				8535A1CD1D894D53008373F3 /* CustomCirkelView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				855AFDFB1D7EB77800BB5AB2 /* SignInVC.swift in Sources */,
 				855AFE171D7ECB1300BB5AB2 /* CustomTextField.swift in Sources */,
 				85D8CBD41D80A90000DD4FB6 /* FeedVC.swift in Sources */,
+				8535A1CE1D894D53008373F3 /* CustomCirkelView.swift in Sources */,
 				855AFDF91D7EB77800BB5AB2 /* AppDelegate.swift in Sources */,
 				855AFE131D7EC7E600BB5AB2 /* Constants.swift in Sources */,
 				855AFE151D7EC9A200BB5AB2 /* CustomButton.swift in Sources */,
