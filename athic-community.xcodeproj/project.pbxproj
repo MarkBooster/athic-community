@@ -21,6 +21,7 @@
 		855AFE171D7ECB1300BB5AB2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AFE161D7ECB1300BB5AB2 /* CustomTextField.swift */; };
 		855AFE191D7ECC4600BB5AB2 /* CustomSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855AFE181D7ECC4600BB5AB2 /* CustomSignInButton.swift */; };
 		856758FD1D895A6A000A02A5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856758FC1D895A6A000A02A5 /* PostCell.swift */; };
+		85A966B01D8FD7C200D0E2D2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A966AF1D8FD7C200D0E2D2 /* DataService.swift */; };
 		85D8CBD41D80A90000DD4FB6 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D8CBD31D80A90000DD4FB6 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		855AFE161D7ECB1300BB5AB2 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		855AFE181D7ECC4600BB5AB2 /* CustomSignInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignInButton.swift; sourceTree = "<group>"; };
 		856758FC1D895A6A000A02A5 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		85A966AF1D8FD7C200D0E2D2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		85D8CBD31D80A90000DD4FB6 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		FB211A8F522D8CAC0BA6C326 /* Pods-athic-community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-athic-community.release.xcconfig"; path = "Pods/Target Support Files/Pods-athic-community/Pods-athic-community.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				850F33D51D8086AD005B667B /* athic-community.entitlements */,
+				85A966AE1D8FD7A400D0E2D2 /* Services */,
 				855AFE111D7EC7D700BB5AB2 /* Utilities */,
 				855AFE0E1D7EB85500BB5AB2 /* Model */,
 				855AFE0D1D7EB85000BB5AB2 /* View */,
@@ -138,6 +141,14 @@
 				855AFE121D7EC7E600BB5AB2 /* Constants.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		85A966AE1D8FD7A400D0E2D2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				85A966AF1D8FD7C200D0E2D2 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		EF3FE8DDFD9BA581463127D0 /* Pods */ = {
@@ -285,6 +296,7 @@
 				855AFDFB1D7EB77800BB5AB2 /* SignInVC.swift in Sources */,
 				855AFE171D7ECB1300BB5AB2 /* CustomTextField.swift in Sources */,
 				85D8CBD41D80A90000DD4FB6 /* FeedVC.swift in Sources */,
+				85A966B01D8FD7C200D0E2D2 /* DataService.swift in Sources */,
 				8535A1CE1D894D53008373F3 /* CustomCirkelView.swift in Sources */,
 				855AFDF91D7EB77800BB5AB2 /* AppDelegate.swift in Sources */,
 				855AFE131D7EC7E600BB5AB2 /* Constants.swift in Sources */,
