@@ -11,12 +11,14 @@ import Firebase
 import SwiftKeychainWrapper
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-   
+    
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var imageAdd: CustomCirkelView!
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
-    @IBOutlet weak var imageAdd: CustomCirkelView!
+    // static staat voor global in, je kunt deze var gebruiken door heel je app
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         imagePicker.delegate = self
         
         //Aangepaste code kijk hiervoor uit!!!
-        self.posts = []
+        //        self.posts = []
         
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
@@ -44,7 +46,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             }
             self.tableView.reloadData()
         })
-
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,8 +62,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         let post = posts[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
-            cell.configureCell(post: post)
-            return cell
+            if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
+                cell.configureCell(post: post, img: img)
+                return cell
+            } else {
+                cell.configureCell(post: post)
+                return cell
+            }
         } else {
             return PostCell()
         }
@@ -81,7 +88,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         present(imagePicker, animated: true, completion: nil)
     }
     
-
+    
     @IBAction func signOutPressed(_ sender: AnyObject) {
         let keychainResult = KeychainWrapper.removeObjectForKey(KEY_UID)
         print("MARK: ID removed from keychain \(keychainResult)")
