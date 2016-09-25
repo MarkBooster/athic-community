@@ -12,8 +12,10 @@ import SwiftKeychainWrapper
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var captionField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageAdd: CustomCirkelView!
+    var imageSelected = false
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
@@ -77,6 +79,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
+            imageSelected = true
         } else {
             print("MARK: A valid Image wasn't selected")
         }
@@ -88,6 +91,35 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         present(imagePicker, animated: true, completion: nil)
     }
     
+    @IBAction func postBtnPressed(_ sender: AnyObject) {
+        guard let caption = captionField.text, caption != "" else {
+            print("MARK: Caption must be entered")
+            return
+        }
+        
+        guard let img = imageAdd.image, imageSelected == true else {
+            print("MARK: An image must be selected")
+            return
+        }
+        
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            
+            let imgUid = NSUUID().uuidString
+            let metadata = FIRStorageMetadata()
+            metadata.contentType = "image/jpeg"
+            
+            DataService.ds.REF_POST_IMAGE.child(imgUid).put(imgData, metadata: metadata) {
+                (metadata, error) in
+                if error != nil {
+                    print("MARK: Unable to upload image to firebase storage")
+                } else {
+                    print("MARK: Succesfully Uploaded image to firebase")
+                    let downloadURL = metadata?.downloadURL()?.absoluteString
+                }
+            }
+        }
+    
+    }
     
     @IBAction func signOutPressed(_ sender: AnyObject) {
         let keychainResult = KeychainWrapper.removeObjectForKey(KEY_UID)
