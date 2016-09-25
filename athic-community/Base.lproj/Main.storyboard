@@ -247,7 +247,7 @@
                                                                             <color key="textColor" red="0.76470588240000004" green="0.1176470588" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="oaX-Ay-Jjh">
+                                                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="oaX-Ay-Jjh">
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="AEo-wm-49b"/>
                                                                                 <constraint firstAttribute="width" constant="60" id="JyJ-CM-aRA"/>
@@ -303,6 +303,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="ttE-zu-FHG" id="E20-a8-pSO"/>
+                                            <outlet property="likeImg" destination="oaX-Ay-Jjh" id="beC-lg-6ih"/>
                                             <outlet property="likesLbl" destination="ah9-Xb-W4T" id="tF2-8Z-Xaj"/>
                                             <outlet property="postImg" destination="LGD-ae-9D6" id="e7L-TO-2n1"/>
                                             <outlet property="profileImg" destination="NaI-PO-CfY" id="tkQ-HJ-DrI"/>
